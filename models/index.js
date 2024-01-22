@@ -14,10 +14,9 @@ Product.belongsTo(Category, {
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
   through: ProductTag,
-  foreignKey: "product_tag",
   unique: false,
   // alias for the association
-  as: "tag_blend",
+  as: "tags",
 });
 
 // Tags belongToMany Products (through ProductTag)
