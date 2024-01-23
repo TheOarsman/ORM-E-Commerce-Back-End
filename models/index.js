@@ -8,7 +8,7 @@ const ProductTag = require("./ProductTag");
 Product.belongsTo(Category, {
   foreignKey: "category_id",
   // alias for the association
-  as: "versa_goods",
+  as: "product_name",
 });
 
 // Products belongToMany Tags (through ProductTag)
