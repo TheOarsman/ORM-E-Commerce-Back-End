@@ -10,11 +10,13 @@ This applictaion uses:
 
 - [Express.js](https://www.npmjs.com/package/express)
 - [MySQL2 Package](https://www.npmjs.com/package/mysql2)
+- [Insomnia](https://insomnia.rest/)
 
-[YouTube: A video that will need to be recorded and new link put here!](https://www.youtube.com/watch?v=aUWs9hD5Fr8)
+[YouTube: ORM E-Commerce Back-End Video Demonstration](https://www.youtube.com/watch?v=uWY5n3dM3VU)
 
-<img src="Assets/Images/ET_Srt_Bnnr.jpg" alt="This will be replaced" width="425"/><br>
-<img src="Assets/Images/ET_Qt_Bnnr.jpg" alt="So will this one" width="425"/>
+<img src="images/tagsSS.jpg" alt="So will this one" height="600"/>
+<img src="images/categoriesSS.jpg" alt="This will be replaced" height="600"/>
+<img src="images/productsSS.jpg" alt="So will this one" height="600"/>
 
 ## Tabel of Contents
 
@@ -86,7 +88,7 @@ None currently
 
 [How to use Inquirer.js](https://javascript.plainenglish.io/how-to-inquirer-js-c10a4e05ef1f)
 
-[ASCII Art Generator](https://www.asciiart.eu/text-to-ascii-art)
+[Insomnia](https://insomnia.rest/)
 
 ## Questions/Contact
 
