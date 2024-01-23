@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
     const prodData = await Product.findAll({
       // be sure to include its associated Category and Tag data
       include: [
-        { model: Category, as: "versa_goods" },
+        { model: Category, as: "product_name" },
         { model: Tag, through: ProductTag, as: "tags" },
       ],
     });
@@ -28,7 +28,7 @@ router.get("/:id", async (req, res) => {
     const prodData = await Product.findByPk(req.params.id, {
       // be sure to include its associated Category and Tag data
       include: [
-        { model: Category, as: "versa_goods" },
+        { model: Category, as: "product_name" },
         { model: Tag, through: ProductTag, as: "tags" },
       ],
     });
@@ -44,6 +44,8 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+Product.belongsTo(Category);
+
 // create new product
 router.post("/", (req, res) => {
   /* req.body should look like this...
@@ -54,26 +56,24 @@ router.post("/", (req, res) => {
       tagIds: [1, 2, 3, 4]
     }
   */
-  Product.create(req.body)
-    .then((product) => {
-      // if there's product tags, we need to create pairings to bulk create in the ProductTag model
-      if (req.body.tagIds.length) {
-        const productTagIdArr = req.body.tagIds.map((tag_id) => {
-          return {
-            product_id: product.id,
-            tag_id,
-          };
-        });
-        return ProductTag.bulkCreate(productTagIdArr);
-      }
-      // if no product tags, just respond
-      res.status(200).json(product);
-    })
-    .then((productTagIds) => res.status(200).json(productTagIds))
-    .catch((err) => {
-      console.log(err);
-      res.status(400).json(err);
-    });
+  if (req.body.category_id) {
+    Product.create(req.body)
+      .then((product) => {
+        // set the category_id directly on the product instance
+        product.category_id = req.body.category_id;
+        return product.save();
+      })
+      .then(() =>
+        res.status(200).json({ message: "Product created successfully" })
+      )
+      .catch((err) => {
+        console.log(err);
+        res.status(400).json(err);
+      });
+  } else {
+    // Handle the case where category_id is missing
+    res.status(400).json({ message: "category_id is required" });
+  }
 });
 
 // update product
