@@ -10,12 +10,13 @@ router.get("/", async (req, res) => {
     const prodData = await Product.findAll({
       // be sure to include its associated Category and Tag data
       include: [
-        { model: Category, as: "category" },
+        { model: Category, as: "versa_goods" },
         { model: Tag, through: ProductTag, as: "tags" },
       ],
     });
     res.status(200).json(prodData);
   } catch (err) {
+    console.error("Error in GET /api/products:", err);
     res.status(500).json(err);
   }
 });
@@ -27,7 +28,7 @@ router.get("/:id", async (req, res) => {
     const prodData = await Product.findByPk(req.params.id, {
       // be sure to include its associated Category and Tag data
       include: [
-        { model: Category, as: "category" },
+        { model: Category, as: "versa_goods" },
         { model: Tag, through: ProductTag, as: "tags" },
       ],
     });
