@@ -14,9 +14,9 @@ This applictaion uses:
 
 [YouTube: ORM E-Commerce Back-End Video Demonstration](https://www.youtube.com/watch?v=uWY5n3dM3VU)
 
-<img src="images/tagsSS.jpg" alt="So will this one" height="600"/>
-<img src="images/categoriesSS.jpg" alt="This will be replaced" height="600"/>
-<img src="images/productsSS.jpg" alt="So will this one" height="600"/>
+<img src="images/tagsSS.jpg" alt="tags list" height="600"/>
+<img src="images/categoriesSS.jpg" alt="categories list" height="600"/>
+<img src="images/productsSS.jpg" alt="products list" height="600"/>
 
 ## Tabel of Contents
 
