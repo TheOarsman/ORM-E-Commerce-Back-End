@@ -6,7 +6,7 @@
 
 A demonstration of the funamental architecture of an e-commerce site. Using given starter code the back end was then configured with a working Express.js API to use Sequelize to interact with a MySQL database.
 
-[ORM E-Commerce Back-End Video Demonstration](https://www.youtube.com/watch?v=uWY5n3dM3VU)
+[ORM E-Commerce Back-End Video Demonstration](https://youtu.be/XMI2PqBvzY8)
 
 **Tags Seeds**
 
