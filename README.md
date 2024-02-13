@@ -8,9 +8,7 @@ A demonstration of the funamental architecture of an e-commerce site. Using give
 
 [ORM E-Commerce Back-End Video Demonstration](https://www.youtube.com/watch?v=uWY5n3dM3VU)
 
-<img src="images/tagsSS.jpg" alt="tags list" height="500" width="325"/>
-<img src="images/categoriesSS.jpg" alt="categories list" height="500" width="300"/>
-<img src="images/productsSS.jpg" alt="products list" height="500" width="225"/>
+<img src="images/tagsSS.jpg" alt="tags list" height="500" width="325"/> <img src="images/categoriesSS.jpg" alt="categories list" height="500" width="300"/> <img src="images/productsSS.jpg" alt="products list" height="500" width="225"/>
 
 ## Table of Contents
 
