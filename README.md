@@ -6,25 +6,20 @@
 
 A demonstration of the funamental architecture of an e-commerce site. Using given starter code the back end was then configured with a working Express.js API to use Sequelize to interact with a MySQL database.
 
-This applictaion uses:
-
-- [Express.js](https://www.npmjs.com/package/express)
-- [MySQL2 Package](https://www.npmjs.com/package/mysql2)
-- [Insomnia](https://insomnia.rest/)
-
-[YouTube: ORM E-Commerce Back-End Video Demonstration](https://www.youtube.com/watch?v=uWY5n3dM3VU)
+[ORM E-Commerce Back-End Video Demonstration](https://www.youtube.com/watch?v=uWY5n3dM3VU)
 
 <img src="images/tagsSS.jpg" alt="tags list" height="600"/>
 <img src="images/categoriesSS.jpg" alt="categories list" height="600"/>
 <img src="images/productsSS.jpg" alt="products list" height="600"/>
 
-## Tabel of Contents
+## Table of Contents
 
 - [ORM E-Commerce Back End](#orm-e-commerce-back-end)<br>
 - [Description](#description)<br>
-- [Tabel of Contents](#tabel-of-contents)<br>
+- [Table of Contents](#tabel-of-contents)<br>
 - [User Story](#user-story)<br>
 - [Acceptance Criteria](#acceptance-criteria)<br>
+- [Technologies](#technologies)<br>
 - [License](#license)<br>
 - [Contributing](#contributing)<br>
 - [Tests](#tests)<br>
@@ -57,6 +52,16 @@ This applictaion uses:
 
 **WHEN** I test API POST, PUT, and DELETE routes in Insomnia <br>
 **THEN** I am able to successfully create, update, and delete data in my database
+
+## Technologies
+
+[![mySQL Badge](images/mySQL.png)](https://www.mysql.com/)
+
+[![Express.JS Badge](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)](https://www.npmjs.com/package/express)
+
+![Insomnia Badge](images/Insomnia.png)
+
+![Javascript Badge](images/JavaScript.png)
 
 ## License
 
